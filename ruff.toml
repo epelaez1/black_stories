@@ -1,0 +1,47 @@
+line-length = 119
+target-version = "py312"
+
+[lint]
+extend-select = [
+  "UP",  # pyupgrade
+  "W",
+  "N", # Naming
+  "ASYNC",
+  "S", # Bandit
+  "BLE", # Blind Exception
+  "FBT", # Boolean trap
+  "B", # BugBear
+  "A", # Builtins
+  "COM", # Trailing comma
+  "C4", # Comprenhensions
+  "DTZ", # Datetime
+  "T10", # Debugger
+  "EM", # Error messages
+  "ISC", # String concatenation
+  "ICN", # Import conventions
+  "G", # Logging
+  "PIE", # Unnecessary statements
+  "T20", # Prints found
+  "PT", # Pytest
+  "RET", # Return statements
+  "SLF", # Private member accessed
+  "SLOT", # Slots
+  "SIM", # Simplification
+  "TID", # Tidy imports
+  "ARG", # Unused arguments
+  "PTH", # Pathlib
+  "TD", # TODOs
+  "FIX", # Fixme
+  "ERA", # Erradicate commented code
+  "PD", # Pandas vet
+  "PGH", # Noqa
+  "PL", # Pylint
+  "TRY", # Exceptions
+  "FLY", # F string over join
+  "PERF", # Performance
+  "LOG", # Logging
+  "RUF", # Ruff specific rules
+]
+
+[lint.per-file-ignores]
+"tests/**" = ["S101"]
